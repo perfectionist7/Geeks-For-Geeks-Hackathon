@@ -34,8 +34,7 @@ class _LandingPageState extends State<LandingPage> {
                         color: Color(0xff012c3d),
                         fontWeight: FontWeight.bold,
                         fontSize: 32,
-                        fontFamily: 'Gothic',
-                        letterSpacing: 2.0,
+                        fontFamily: 'Neon',
                       ),
                     ),
                   ),
@@ -59,8 +58,7 @@ class _LandingPageState extends State<LandingPage> {
                         color: Color(0xfff7f8f3),
                         fontSize: 40,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'Gothic',
-                        letterSpacing: 2.0,
+                        fontFamily: 'Neon',
                       ),
                     ),
                   ),
@@ -88,9 +86,8 @@ class _LandingPageState extends State<LandingPage> {
                     'Create a new account',
                     style: TextStyle(
                       color: Color(0xff012c3d),
-                      fontFamily: 'Gothic',
+                      fontFamily: 'Neon',
                       fontSize: 16,
-                      letterSpacing: 1.0,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
@@ -119,10 +116,10 @@ class _LandingPageState extends State<LandingPage> {
                 child: Text(
                   'Login',
                   style: TextStyle(
-                      color: Color(0xfff7f8f3),
-                      fontFamily: 'Gothic',
-                      fontSize: 16,
-                      letterSpacing: 1.0),
+                    color: Color(0xfff7f8f3),
+                    fontFamily: 'Neon',
+                    fontSize: 16,
+                  ),
                 ),
                 style: ElevatedButton.styleFrom(
                   primary: Color(0xff012c3d),
