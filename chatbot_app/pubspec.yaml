@@ -83,6 +83,9 @@ flutter:
     - family: Neon
       fonts:
         - asset: assets/fonts/TiltNeon-Regular.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-ExtraBold.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
