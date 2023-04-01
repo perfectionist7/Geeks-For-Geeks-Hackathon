@@ -18,9 +18,13 @@ APP Name->
 - mandatory vaccines to be taken
 
 ## Ayush 
+algorithm
+code
+output
+time complexity analysis (quick sort & merge sort derivation)
 
-
-
+wednesday - record checking till 7
+saturday - program checking 4,5,6,7
 
 ## Karanveer
 

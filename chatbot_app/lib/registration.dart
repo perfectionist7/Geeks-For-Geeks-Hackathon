@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -30,3 +31,6 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 }
+=======
+
+>>>>>>> e053c1749c558c0dd9b36dc614c1b7ce50771b67
