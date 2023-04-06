@@ -13,7 +13,18 @@ class _LandingPageState extends State<LandingPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        background      ),
-    );
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/images/backgroundimage.png"),
+                fit: BoxFit.cover),
+          ),
+          child: ListView(
+              physics: const BouncingScrollPhysics(
+                  parent: AlwaysScrollableScrollPhysics()),
+              children: [
+                Container(
+                    image : AssetImage(""),
+    )
   }
 }
