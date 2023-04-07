@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'landing.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -10,6 +11,29 @@ class RegisterPage extends StatefulWidget {
 class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
+    MaterialStateProperty<Color> getColor(Color color, Color colorPressed) {
+      final getColor = (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed)) {
+          return colorPressed;
+        } else {
+          return color;
+        }
+      };
+      return MaterialStateProperty.resolveWith(getColor);
+    }
+
+    MaterialStateProperty<BorderSide> getBorder(
+        Color color, Color colorPressed) {
+      final getBorder = (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed)) {
+          return BorderSide(color: colorPressed);
+        } else {
+          return BorderSide(color: colorPressed);
+        }
+      };
+      return MaterialStateProperty.resolveWith(getBorder);
+    }
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -29,27 +53,47 @@ class _RegisterPageState extends State<RegisterPage> {
                   height: 28,
                   width: 80,
                   child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        'User',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Inter',
-                          fontSize: 15,
-                        ),
+                    onPressed: () {},
+                    child: Text(
+                      'User',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Inter',
+                        fontSize: 15,
                       ),
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.black,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(32)),
-                      )),
+                    ),
+                    style: ButtonStyle(
+                        overlayColor: getColor(Colors.white, Colors.black),
+                        foregroundColor: getColor(Colors.black, Colors.white),
+                        side: getBorder(Colors.black, Colors.white),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(32),
+                        ))),
+                  ),
                 ),
                 Container(
                   margin: EdgeInsets.fromLTRB(19, 84, 200, 0),
                   height: 28,
                   width: 85,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    style: ButtonStyle(
+                      overlayColor: getColor(Colors.white, Colors.black),
+                      foregroundColor: getColor(Colors.black, Colors.white),
+                      side: getBorder(Colors.black, Colors.white),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(32),
+                      )),
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LandingPage()),
+                      );
+                    },
                     child: Text(
                       'Doctor',
                       style: TextStyle(
@@ -57,11 +101,6 @@ class _RegisterPageState extends State<RegisterPage> {
                         fontFamily: 'Inter',
                         fontSize: 15,
                       ),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.black,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(32)),
                     ),
                   ),
                 ),
