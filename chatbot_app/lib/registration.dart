@@ -108,7 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
               Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(42, 40, 215, 0),
+                    margin: EdgeInsets.fromLTRB(42, 40, 180, 0),
                     child: Text(
                       'Phone Number',
                       style: TextStyle(

@@ -34,11 +34,11 @@ class _LandingPageState extends State<LandingPage> {
                       ),
                       Container(
                         margin: EdgeInsets.only(
-                            left: 55, top: 36, right: 28, bottom: 0),
+                            left: 48, top: 36, right: 24, bottom: 0),
                         child: Text(
                           'HEALTHWIZ',
                           style: TextStyle(
-                              fontSize: 52,
+                              fontSize: 48,
                               fontFamily: 'Inter',
                               color: Colors.white,
                               fontWeight: FontWeight.w800),
