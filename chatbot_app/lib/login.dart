@@ -31,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
                     'WELCOME BACK!',
                     style: TextStyle(
                         fontSize: 36,
-                        fontFamily: 'Inter',
+                        fontFamily: 'Circular',
                         color: Colors.white,
                         fontWeight: FontWeight.w800),
                   ),
@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                     'GET DIAGNOSED AT YOUR FINGERTIPS.\nSIGN UP TODAY!',
                     style: TextStyle(
                         fontSize: 16,
-                        fontFamily: 'Inter',
+                        fontFamily: 'Circular',
                         color: Colors.white,
                         fontWeight: FontWeight.w800),
                   ),
@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                     'Login',
                     style: TextStyle(
                         fontSize: 24,
-                        fontFamily: 'Inter',
+                        fontFamily: 'Circular',
                         color: Colors.black,
                         fontWeight: FontWeight.w800),
                   ),
@@ -85,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                     'Password',
                     style: TextStyle(
                         fontSize: 24,
-                        fontFamily: 'Inter',
+                        fontFamily: 'Circular',
                         color: Colors.black,
                         fontWeight: FontWeight.w800),
                   ),
@@ -122,8 +122,9 @@ class _LoginPageState extends State<LoginPage> {
                         'LOGIN',
                         style: TextStyle(
                           color: Color(0xff24FF00),
-                          fontFamily: 'Inter',
+                          fontFamily: 'Circular',
                           fontSize: 16,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -140,12 +141,12 @@ class _LoginPageState extends State<LoginPage> {
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 12,
-                          fontFamily: 'Interb'),
+                          fontFamily: 'Circular'),
                       children: <TextSpan>[
                         TextSpan(
                           text: 'SIGN UP',
                           style: TextStyle(
-                              color: Color(0XFF24FF00), fontFamily: 'Interb'),
+                              color: Color(0XFF24FF00), fontFamily: 'Circular'),
                         ),
                       ],
                     ),

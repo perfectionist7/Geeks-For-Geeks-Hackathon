@@ -1,3 +1,6 @@
+import 'package:acm_opportunities_app/signup_doctor.dart';
+import 'package:acm_opportunities_app/signup_user.dart';
+
 import 'landing.dart';
 import 'package:flutter/material.dart';
 import 'rash_detection.dart';

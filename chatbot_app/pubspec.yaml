@@ -77,6 +77,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Circular
+      fonts:
+        - asset: assets/fonts/circular-std-medium-500.ttf
     - family: Gothic
       fonts:
         - asset: assets/fonts/Titling-Gothic-Medium.ttf

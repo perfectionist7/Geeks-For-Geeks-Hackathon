@@ -39,7 +39,7 @@ class _LandingPageState extends State<LandingPage> {
                           'HEALTHWIZ',
                           style: TextStyle(
                               fontSize: 48,
-                              fontFamily: 'Inter',
+                              fontFamily: 'Circular',
                               color: Colors.white,
                               fontWeight: FontWeight.w800),
                         ),
@@ -50,8 +50,8 @@ class _LandingPageState extends State<LandingPage> {
                         child: Text(
                           'GET DIAGNOSED AT YOUR FINGERTIPS \nSIGN UP TODAY!',
                           style: TextStyle(
-                              fontSize: 16,
-                              fontFamily: 'Inter',
+                              fontSize: 18,
+                              fontFamily: 'Circular',
                               color: Colors.white,
                               fontWeight: FontWeight.w800),
                         ),
@@ -82,7 +82,8 @@ class _LandingPageState extends State<LandingPage> {
                               'Create a new account',
                               style: TextStyle(
                                 color: Color(0xff5E50FF),
-                                fontFamily: 'Interb',
+                                fontFamily: 'Circular',
+                                fontWeight: FontWeight.w600,
                                 fontSize: 18,
                               ),
                             ),
@@ -119,8 +120,8 @@ class _LandingPageState extends State<LandingPage> {
                               'Login',
                               style: TextStyle(
                                 color: Color(0xff5E50FF),
-                                fontFamily: 'Interb',
-                                fontWeight: FontWeight.w700,
+                                fontFamily: 'Circular',
+                                fontWeight: FontWeight.w600,
                                 fontSize: 18,
                               ),
                             ),

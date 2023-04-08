@@ -20,7 +20,7 @@ class _rash_detection extends State<rash_detection> {
                 Positioned(
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    color: Colors.blue,
+                    color: Colors.black,
                     height: MediaQuery.of(context).size.height * 0.5,
                   ),
                 ),
