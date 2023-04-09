@@ -1,3 +1,4 @@
+import 'package:acm_opportunities_app/registration.dart';
 import 'package:flutter/material.dart';
 import 'landing.dart';
 
@@ -99,6 +100,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   margin: EdgeInsets.fromLTRB(67, 7, 69, 0),
                   child: TextField(
+                    obscureText: true,
                     decoration: InputDecoration(
                       hintText: 'Password',
                       contentPadding: EdgeInsets.all(10),
@@ -134,22 +136,32 @@ class _LoginPageState extends State<LoginPage> {
                       )),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(80, 91, 90, 20),
-                  child: RichText(
-                    text: TextSpan(
-                      text: "Don't have an account? ",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontFamily: 'Circular'),
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'SIGN UP',
+                  margin: EdgeInsets.fromLTRB(100, 30, 90, 20),
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const RegisterPage()),
+                      );
+                    },
+                    child: Text.rich(TextSpan(children: [
+                      TextSpan(
+                          text: 'Don\'t Have An Account?',
                           style: TextStyle(
-                              color: Color(0XFF24FF00), fontFamily: 'Circular'),
-                        ),
-                      ],
-                    ),
+                            color: Colors.white,
+                            fontFamily: 'Circular',
+                            fontSize: 12,
+                          )),
+                      TextSpan(
+                          text: ' SIGN UP',
+                          style: TextStyle(
+                            color: Color(0xff24FF00),
+                            fontFamily: 'Circular',
+                            fontWeight: FontWeight.w800,
+                            fontSize: 12,
+                          ))
+                    ])),
                   ),
                 ),
               ]),

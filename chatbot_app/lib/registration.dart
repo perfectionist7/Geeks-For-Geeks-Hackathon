@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'landing.dart';
 import 'signup_doctor.dart';
 import 'signup_user.dart';
+import 'login.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -127,13 +128,42 @@ class _RegisterPageState extends State<RegisterPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    margin: EdgeInsets.fromLTRB(38, 8, 96, 615),
+                    margin: EdgeInsets.fromLTRB(38, 8, 96, 0),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Phone Number',
                         contentPadding: EdgeInsets.all(10),
                         border: InputBorder.none,
                       ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(90, 510, 90, 20),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const LoginPage()),
+                        );
+                      },
+                      child: Text.rich(TextSpan(children: [
+                        TextSpan(
+                            text: 'Already Have An Account?',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Circular',
+                              fontSize: 12,
+                            )),
+                        TextSpan(
+                            text: ' LOGIN',
+                            style: TextStyle(
+                              color: Color(0xff24FF00),
+                              fontFamily: 'Circular',
+                              fontWeight: FontWeight.w800,
+                              fontSize: 12,
+                            ))
+                      ])),
                     ),
                   ),
                 ],
